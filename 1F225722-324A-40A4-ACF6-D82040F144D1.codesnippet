@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>roundPath</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CGFloat avatarSize = &lt;#avatarSize#&gt;;
+UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(avatarSize / 2, avatarSize / 2.0f)
+                                                                  radius:avatarSize / 2.0f
+                                                              startAngle:0
+                                                                endAngle:(CGFloat) (2 * M_PI)
+                                                               clockwise:YES];
+        CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+        shapeLayer.path = bezierPath.CGPath;
+
+&lt;#view#&gt;.layer.mask = shapeLayer;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1F225722-324A-40A4-ACF6-D82040F144D1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>RoundPath</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
